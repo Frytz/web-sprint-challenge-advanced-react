@@ -55,31 +55,31 @@ _Please follow the setup instructions closely so that you can get everything up 
 **Basic set up**
 
 - [ y] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [y ] Add your team lead as collaborator on Github
+- [ y] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [ y] Create a new branch: git checkout -b `<firstName-lastName>`.
 
 **Starting the server**
 
-- [ ] Run `npm install` to download dependencies for the server.
-- [ ] Run the server using `npm start`.
-- [ ] Open a new browser tab and navigate to `http://localhost:3333/plants` - if you see a JSON object with plants data, then you know the server is running 👍
+- [ y] Run `npm install` to download dependencies for the server.
+- [ y] Run the server using `npm start`.
+- [ y] Open a new browser tab and navigate to `http://localhost:3333/plants` - if you see a JSON object with plants data, then you know the server is running 👍
 
 **Starting the React app**
 
-- [ ] In a separate terminal cd into the `client` folder and run `npm install` to download dependencies.
-- [ ] Still inside the `client` folder run `npm run start` to run the client application.
-- [ ] Your browser should open up the project as normal
+- [ y] In a separate terminal cd into the `client` folder and run `npm install` to download dependencies.
+- [ y] Still inside the `client` folder run `npm run start` to run the client application.
+- [ y] Your browser should open up the project as normal
 
 **Starting your test runner**
 
-- [ ] In the final terminal window, make sure you are in the `client` folder still
-- [ ] Start the test runner with `npm test` (I recommend doing this only when you're testing - any change in your app will make the tests run, and that could eat up your computer power)
+- [ y] In the final terminal window, make sure you are in the `client` folder still
+- [ y] Start the test runner with `npm test` (I recommend doing this only when you're testing - any change in your app will make the tests run, and that could eat up your computer power)
 
 **Commit and Push OFTEN!**
 
-- [ ] Implement the project on this Branch, **committing progress & changes often.**
-- [ ] Push commits: `git push origin <firstName-lastName>`.
+- [ y] Implement the project on this Branch, **committing progress & changes often.**
+- [ y] Push commits: `git push origin <firstName-lastName>`.
 
 ### Task 2: Project Requirements
 
@@ -89,9 +89,9 @@ Your finished project must include all of the following requirements:
 
 Display a list of the plants from the server. This should be done in the class component `PlantList`.
 
-- [ ] In the `PlantList` class component, fetch data from the server you now have running - the data can be fetched from `http://localhost:3333/plants`
-- [ ] Set the data to a state property called `this.state.plants`
-- [ ] The render function is already built and styled. Once the data is on the state, you will see the list of plants, and you will have the functionality to add a plant to the cart
+- [ y] In the `PlantList` class component, fetch data from the server you now have running - the data can be fetched from `http://localhost:3333/plants`
+- [y ] Set the data to a state property called `this.state.plants`
+- [ y] The render function is already built and styled. Once the data is on the state, you will see the list of plants, and you will have the functionality to add a plant to the cart
 
 #### Shopping Cart
 
