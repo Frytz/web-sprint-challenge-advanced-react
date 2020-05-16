@@ -1,16 +1,13 @@
 import React from "react";
-import { render, fireEvent, waitForElement } from "@testing-library/react";
+import { render, fireEvent, waitFor } from "@testing-library/react";
 import CheckoutForm from "./CheckoutForm";
-// import "mutationobserver-shim";
+import "mutationobserver-shim";
 
 // Write up the two tests here and make sure they are testing what the title shows
 
 test("form header renders", () => {
-    const { getByText } = render(<CheckoutForm />);
-
-    const header = getByText(/checkout form/i);
-
-    expect(header).toBeInTheDocument();
+    const {  getByTestId } = render(<CheckoutForm />);
+     getByTestId("formHead");
 });
 
 test("must render", () => {
@@ -72,7 +69,7 @@ test("can submit filled form", async () => {
     expect(zipInput.value).toBe("12345")
 
     fireEvent.click(getByTestId('button'))
-    await waitForElement(() => getByTestId('successMessage'))
+    await waitFor(() => getByTestId('successMessage'))
    
 
 })

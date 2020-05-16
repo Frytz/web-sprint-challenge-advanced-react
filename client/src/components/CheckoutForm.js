@@ -33,7 +33,7 @@ const CheckoutForm = (props) => {
     <>
 
       <form onSubmit={handleSubmit}>
-        <h2>Checkout Form</h2>
+        <h2 data-testid= "formHead">Checkout Form</h2>
         <label>
           First Name:
           <input
