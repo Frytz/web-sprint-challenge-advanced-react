@@ -18,10 +18,10 @@ const initialValue = {
 const CheckoutForm = (props) => {
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   // const [values, setValues] = useState(initialValue);
-  const [values, setValues] = useForm(initialValue);
-  const handleChanges = (e) => {
-    setValues({ ...values, [e.target.name]: e.target.value });
-  };
+  const [values, handleChanges] = useForm(initialValue);
+  // const handleChanges = (e) => {
+  //   setValues({ ...values, [e.target.name]: e.target.value });
+  // };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -37,7 +37,7 @@ const CheckoutForm = (props) => {
         <label>
           First Name:
           <input
-            id="firstName"
+            data-testid="firstName"
             name="firstName"
             value={values.firstName}
             onChange={handleChanges}
@@ -46,7 +46,7 @@ const CheckoutForm = (props) => {
         <label>
           Last Name:
           <input
-            id="lastName"
+              data-testid="lastName"
             name="lastName"
             value={values.lastName}
             onChange={handleChanges}
@@ -55,7 +55,7 @@ const CheckoutForm = (props) => {
         <label>
           Address:
           <input
-            id="address"
+              data-testid="address"
             name="address"
             value={values.address}
             onChange={handleChanges}
@@ -64,7 +64,7 @@ const CheckoutForm = (props) => {
         <label>
           City:
           <input
-          id="city"
+            data-testid="city"
           name="city" 
           value={values.city} 
           onChange={handleChanges} />
@@ -72,7 +72,7 @@ const CheckoutForm = (props) => {
         <label>
           State:
           <input 
-          id = "state"
+            data-testid = "state"
           name="state" 
           value={values.state} 
           onChange={handleChanges} />
@@ -80,13 +80,13 @@ const CheckoutForm = (props) => {
         <label>
           Zip:
           <input 
-          id = "zip"
+            data-testid = "zip"
           name="zip" 
           value={values.zip} 
           onChange={handleChanges} />
         </label>
         <button 
-        id="button"
+          data-testid="button"
         >Checkout</button>
       </form>
 
